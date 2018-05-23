@@ -4,7 +4,11 @@ This converter was created because of the default settings of the VariantsToTabl
 
 However, the VariantsToTable tool converts the alleles in the VCF from, as an example, 0/0 to T/T which makes downstream analysis harder. So this python program was written to remedy this issue. 
 
-It takes an input file (generated from the gatk tool VariantsToTable script included in this repository) and converts the alleles from T/T format back to 0/0 format. It ignores all instances of "./." and "*/*" and leaves them as-is because we do not want false reads on these individuals.    
+It takes an input file (generated from the gatk tool VariantsToTable script included in this repository) and converts the alleles from T/T format back to 0/0 format. It ignores all instances of 
+```
+./. and */*
+```
+ and leaves them as-is because we do not want false reads on these individuals.    
 
 ## Getting Started
 
