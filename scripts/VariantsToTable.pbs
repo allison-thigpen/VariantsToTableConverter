@@ -1,0 +1,8 @@
+java -jar GenomeAnalysisTK.jar \
+-R reference.fasta \
+-T VariantsToTable \
+-V file.vcf \
+-F CHROM -F POS -F REF -F ALT \
+-GF GT \
+-o results.table 
+
